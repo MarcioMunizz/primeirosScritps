@@ -73,12 +73,9 @@ let n1 = Number(window.prompt("Digite o primeiro numero: "));
 let n2 = Number(window.prompt("Digite outro numero: "));
 let s = n1 + n2;
 
-window.alert("soma dos valores é " + String(s));
+window.alert(`soma entre ${n1} e ${n2} é igual a ${s}`);
 
 
-
-
-//continuação das aulas 
-
+//continuação das aulas
 
 
