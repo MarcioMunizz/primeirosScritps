@@ -41,3 +41,45 @@ newButton.addEventListener ('click', () => {
 document.body.appendChild(newButton);
 
 
+
+// fazendo mais atividades 
+const pesoTara_T = 26;
+let peca1_T = 12;
+let peca2_T = 12;
+const limitePeso = 50;
+
+peca2_T = 15; // alterando o valor da peça 2 para testar a condição do peso total
+
+const pesoTotal = pesoTara_T + peca1_T + peca2_T;
+    
+if (pesoTotal > limitePeso) {
+    console.log(`${pesoTotal} Acima do Limite de peso`);
+}else if (pesoTotal === limitePeso){
+    console.log(`${pesoTotal} Peso dentro do limite`);
+}else{
+    console.log(`${pesoTotal} Peso abaixo do limite`);
+}
+
+const firtName = "Marcio";
+let age = 21;
+
+age = age + 1;
+
+document.getElementById("demo").innerHTML = `Ola ${firtName}, voce tem ${age} anos de idade.`;
+
+
+// ultilizar o Number é a forma mais atualizada de converter uma string.
+let n1 = Number(window.prompt("Digite o primeiro numero: "));
+let n2 = Number(window.prompt("Digite outro numero: "));
+let s = n1 + n2;
+
+window.alert(`soma entre ${n1} e ${n2} é igual a ${s}`);
+
+
+//continuação das aulas Dom
+let corpo = window.document.body;
+let p1 = window.document.getElementsByTagName('p');[0];
+corpo.style.background = 'black';
+p1.style.color = 'blue';
+
+ 
