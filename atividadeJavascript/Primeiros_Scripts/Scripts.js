@@ -10,6 +10,7 @@ function calcularTotal(precoProduto, qtd) {
 
 console.log(calcularTotal(preco, quantidade));
 */
+/*
 
 // rescrevendo codigo acima para Sintaxe moderna
 const nomeProduto = "teclado mecanico";
@@ -74,12 +75,61 @@ let n2 = Number(window.prompt("Digite outro numero: "));
 let s = n1 + n2;
 
 window.alert(`soma entre ${n1} e ${n2} é igual a ${s}`);
+*/
 
-
+/*
 //continuação das aulas Dom
 let corpo = window.document.body;
-let p1 = window.document.getElementsByTagName('p');[0];
-corpo.style.background = 'black';
-p1.style.color = 'blue';
+let p1 = window.document.getElementsByTagName('p')[0];
 
- 
+
+let msg = window.document.getElementById("msg"); 
+msg.style.background = 'green';
+msg.innerText = 'estou aguardand...';
+
+
+//let msg = window.document.querySelector('div#msg');
+//msg.style.color = 'blue';
+*/
+
+//exercicio
+/*
+document.addEventListener('DOMContentLoaded', ()=> {
+
+    const areaInteracao = document.getElementById('area');
+    
+
+    areaInteracao.addEventListener('click', () => {
+        areaInteracao.innerText = 'clicou';
+        areaInteracao.style.background = 'red';
+    });
+
+    areaInteracao.addEventListener('mouseenter', () =>{
+        areaInteracao.innerText = 'Entrou';
+        areaInteracao.style.background = 'yellow';
+    });
+
+    areaInteracao.addEventListener('mouseout', () =>{
+        areaInteracao.innerText = 'saiu';
+        areaInteracao.style.background = 'blue';
+    });
+
+});
+ */
+
+document.addEventListener('DOMContentLoaded', () =>{
+
+    const somar = () => {
+        const tn1 = document.querySelector('input#txtn1');
+        const tn2 = document.querySelector('input#txtn2');
+        const res = document.getElementById('res');
+    
+        const n1 = Number(tn1.value);
+        const n2 = Number(tn2.value);
+        const s= n1 +n2 
+        res.innerHTML = `soma entre ${n1} e ${n2} é igual  a ${s}`
+    } 
+
+    const sumbutton = document.getElementById('botao-soma');
+    sumbutton.addEventListener('click', somar);
+});
