@@ -1,0 +1,9 @@
+const amigo = {
+    nome:"jose",
+    peso: 85.4,
+    engordar(p){
+        this.peso += p
+    }
+}
+amigo.engordar(2);
+console.log(`${amigo} pesa ${amigo.peso}kg`)
